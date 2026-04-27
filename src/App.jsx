@@ -5,7 +5,7 @@ import CountryList from "./CountryList"; // Import your new file
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [debouncedSearch] = useDebounce(inputValue, 500);
+  const [debouncedSearch] = useDebounce(searchTerm, 500);
 
   return (
     <div style={{ padding: "20px" }}>
